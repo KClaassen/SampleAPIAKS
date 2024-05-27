@@ -1,0 +1,13 @@
+apiVersion: v2
+name: my-application
+description: A Helm chart for managing the API and Database subcharts
+version: 0.1.0
+appVersion: "1.0.0"
+
+dependencies:
+  - name: api
+    version: 0.1.0
+    repository: file://./api
+  - name: database
+    version: 0.1.0
+    repository: file://./database
